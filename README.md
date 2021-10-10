@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Git Cheat Sheet by Gitlab
 
 Commit - an object
@@ -76,3 +77,6 @@ git checkout [-b][branch_name]
 ```bash
 git merge [from name]
 ```
+=======
+# git
+>>>>>>> 7ddc33692135341bbe7aa10440a27a504605e489
