@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Git Cheat Sheet by Gitlab
+# Git-Tutorial
 
 Commit - an object
 Branch - a reference to a commit; can have a tracked upstream
@@ -23,8 +22,10 @@ git init [project name]
 ```
 
 ```bash
-git clone [project url]
+$ git clone [project url]
 ```
+
+When you clone a repository with *git clone*, it automatically creates a remote connection called **origin** pointing back to the cloned repository.
 
 ## Day-To-Day Work
 
@@ -53,7 +54,7 @@ git reset [file]
 ```
 
 ```bash
-git commit [message]
+git commit -m [message]
 ```
 
 ```bash
@@ -71,12 +72,47 @@ git branch [branch_name]
 ```
 
 ```bash
+git branch -m [old_name][new_name]
+```
+
+Both [Conservancy](https://sfconservancy.org/news/2020/jun/23/gitbranchname/) and the Git project are aware that the initial branch name, ‘master’, is offensive to some people.                                                                                                                             Many communities, both on [GitHub](https://github.com/github/renaming) and in the wider Git community, are considering renaming the default branch name of their repository from master. GitHub is gradually renaming the default branch of our own repositories from *master* to *main*.
+
+```bash
 git checkout [-b][branch_name]
 ```
 
 ```bash
-git merge [from name]
+git merge [-m][from name]
 ```
-=======
-# git
->>>>>>> 7ddc33692135341bbe7aa10440a27a504605e489
+
+## Git Remote
+
+```bash
+git remote [-v]
+```
+
+```bash
+git remote add [name] [URL]
+```
+
+Two of the easiest ways to access a remote repo are via the **HTTP** and the **SSH** protocols. HTTP is an easy way to allow anonymous, read-only access to a repository. But, it’s generally not possible to push commits to an HTTP address. For read-write access, you should [use SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) instead.
+
+```bash
+git remote remove [name]
+```
+
+```bash
+git remote set-url [remote] [url]
+```
+
+```bash
+git fetch [remote]
+```
+
+```bash
+git pull [remote] [branch]
+```
+
+```bash
+git push -u [remote] [branch]
+```
