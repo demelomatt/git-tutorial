@@ -34,7 +34,8 @@ Downloads a project with the entire history from the remote repository.
 $ git clone [project url]
 ```
 
-When you clone a repository with *git clone*, it automatically creates a remote connection called **origin** pointing back to the cloned repository.
+> When you clone a repository with *git clone*, it automatically creates a remote connection called **origin** pointing back to the cloned repository.
+> 
 
 ## Day-To-Day Work
 
@@ -106,7 +107,8 @@ Rename branch
 git branch -m [old_name][new_name]
 ```
 
-Both [Conservancy](https://sfconservancy.org/news/2020/jun/23/gitbranchname/) and the Git project are aware that the initial branch name, ‘master’, is offensive to some people.                                                                                                                             Many communities, both on [GitHub](https://github.com/github/renaming) and in the wider Git community, are considering renaming the default branch name of their repository from master. GitHub is gradually renaming the default branch of our own repositories from *master* to *main*.
+> Both [Conservancy](https://sfconservancy.org/news/2020/jun/23/gitbranchname/) and the Git project are aware that the initial branch name, ‘master’, is offensive to some people.                                                                                                                             Many communities, both on [GitHub](https://github.com/github/renaming) and in the wider Git community, are considering renaming the default branch name of their repository from master. GitHub is gradually renaming the default branch of our own repositories from *master* to *main*.
+> 
 
 Switch working directory to the specified branch. With -b: Git will create the specified branch if it does not exist.
 
@@ -134,7 +136,8 @@ Create a new connection to a remote repository. After adding a remote, you’ll 
 git remote add [name] [URL]
 ```
 
-Two of the easiest ways to access a remote repo are via the **HTTP** and the **SSH** protocols. HTTP is an easy way to allow anonymous, read-only access to a repository. But, it’s generally not possible to push commits to an HTTP address. For read-write access, you should [use SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) instead.
+> Two of the easiest ways to access a remote repo are via the **HTTP** and the **SSH** protocols. HTTP is an easy way to allow anonymous, read-only access to a repository. But, it’s generally not possible to push commits to an HTTP address. For read-write access, you should [use SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) instead.
+> 
 
 Remove the connection to the remote repository called [name].
 
